@@ -62,7 +62,7 @@
 			</ul>
 	</div><!--webkite-block-sixty-->
 	<div class="webkite-block forty">
-		{{#facet name="Image URL"}}<div class="image-wrapper"><img src="http://placehold.it/518x691"/></div>{{/facet}}
+		{{#facet name="Image URL"}}<div class="image-wrapper"><img src="{{displayValue}}"/></div>{{/facet}}
 		<ul class="wine-price">
 			{{#facet name="Price Per Glass ($)"}}<li class="glass">${{currency displayValue}}<span class="glass-per"> / glass</span></li>{{/facet}}
 			{{#facet name="Price Per Bottle ($)"}}<li class="bottle">${{currency displayValue}}<span class="bottle-per">  / bottle</span></li>{{/facet}}
