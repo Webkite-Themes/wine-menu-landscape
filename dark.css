@@ -271,7 +271,6 @@
     display: inline-block;
     max-width: 100%;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%; }
   #webkite-results a.webkite-remove-filter {
