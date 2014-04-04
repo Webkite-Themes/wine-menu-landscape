@@ -75,9 +75,13 @@ $colorVariant:light;
         .region + .state:before{content: ", ";}
         .region + .country:before{content: ", ";}
         .state + .country:before{content: ", ";}
+        p{text-align: left;}
         }  
       }
-    .image-wrapper{width: 100%;}
+    .image-wrapper{
+    	text-align: right;
+    	width: 100%;
+    	}
     img {
       max-width: 100%;
       height: auto;
