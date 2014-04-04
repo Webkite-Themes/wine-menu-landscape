@@ -9,7 +9,9 @@
 <section class="webkite-result">
 	<div class="webkite-block sixty">
 	  <h2>
-	  	{{#facet name="Winery"}}<span class="winery">{{displayValue}}</span>{{/facet}}
+	  	{{#facet name="Winery"}}
+	  	<a href="#" class="webkite-add-filter winery"  data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>
+	  	{{/facet}}
 	  	{{#facet name="Vintage"}}<span class="vintage">{{displayValue}}</span>{{/facet}}
 	  	{{#facet name="Varietal"}}<span class="varietal">
 		        {{#if filterable}}
@@ -32,33 +34,11 @@
 					-->{{#facet name="Country"}}<a href="#" class="webkite-add-filter country" data-facet="{{name}}" data-operator="is" data-value="{{displayValue}}">{{displayValue}}</a>{{/facet}}
 					</span>
 				</li>
+				{{#facet name="Tasting Notes"}}
 				<li>
-	        {{#facet name="Descriptor"}}
-	          {{#if filterable}}
-	          <b class="inline-filter-button">
-	          <a class="webkite-toggle" data-target=".{{../../id}}-{{name}}-menu">{{downcase name}}<i></i></a>
-	          <ul class="{{../../id}}-{{name}}-menu inline-filter-menu webkite-hide webkite-menu">
-	            {{#each filterableValues}}
-	            <li><a href="#" class="webkite-add-filter webkite-toggle" data-target=".{{../../../id}}-{{../name}}-menu" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a></li>
-	          {{/each}}
-	          </ul>
-	          </b>
-	        {{else}}
-	          <b>{{downcase name}}</b>
-	        {{/if}}
-	        {{#if filterable}}
-	        <span class="facet-values">
-	        {{#each values}}
-	        <a href="#" class="webkite-add-filter" data-facet="{{../name}}" data-operator="is" data-value="{{this}}">{{this}}</a>{{#unless @last}}, <br>{{/unless}}
-	        {{/each}}
-	        </span>
-	        {{else}}
-	        <span class="facet-values">
-	        {{displayValue}}
-	        </span>
-	        {{/if}}
-	        {{/facet}}
-	      </li>
+					<p>{{displayValue}}</p>
+				</li>
+				{{/facet}}
 			</ul>
 	</div><!--webkite-block-sixty-->
 	<div class="webkite-block forty">
