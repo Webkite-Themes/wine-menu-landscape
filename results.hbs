@@ -70,7 +70,9 @@
       <div class="webkite-block forty">
         <ul class="wine-price">
           {{#facet name="Price Per Glass ($)"}}<li class="glass">${{currency displayValue}}<span class="glass-per"> / glass</span></li>{{/facet}}
+          {{#facet name="Price Per Glass"}}<li class="glass">{{currency displayValue}}<span class="glass-per"> / glass</span></li>{{/facet}}
           {{#facet name="Price Per Bottle ($)"}}<li class="bottle">${{currency displayValue}}<span class="bottle-per">  / bottle</span></li>{{/facet}}
+          {{#facet name="Price Per Bottle"}}<li class="bottle">{{currency displayValue}}<span class="bottle-per">  / bottle</span></li>{{/facet}}
         </ul>
         {{#facet name="Image URL"}}<div class="image-wrapper"><img src="{{displayValue}}"/></div>{{/facet}}
       </div><!--webkite-block forty-->
