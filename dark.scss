@@ -85,8 +85,10 @@ $colorVariant:dark;
       display:block;
       }    
     + .webkite-result-body {
+      @include boxedUp;
       display:inline-block;
       position:relative;
+      width:100%;
       }
     }
   .webkite-subheadline {
@@ -107,6 +109,8 @@ $colorVariant:dark;
     }
   .webkite-providence {
     margin-top:$mainGutter/2.5;
+    color:$lightOpacity;
+    opacity:0.75;
     &:empty {display:none;}
     a + a:before, 
     span + span:before, 
@@ -121,6 +125,7 @@ $colorVariant:dark;
   .webkite-prices {
     height:100%;
     display:table;
+    width:100%;
     & > .webkite-block {
       display:table-cell;
       vertical-align:middle;
@@ -348,6 +353,8 @@ $colorVariant:dark;
       padding-left:$imageWidthMd + $mainGutter;
       }
     }
+  .webkite-prices-wrap {padding-left:0;}
+  .webkite-prices{margin-left:0px;}
   }
 
 /*************************** DISPLAY RULES */
