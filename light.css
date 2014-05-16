@@ -532,6 +532,8 @@
     display: inline-block;
     position: relative;
     width: 100%; }
+#webkite-results .webkite-wine-name {
+  display: inline-block; }
 #webkite-results .webkite-subheadline {
   margin-bottom: 2px;
   font-family: 'Libre Baskerville', 'Georgia', serif;
@@ -580,7 +582,6 @@
   font-size: 0.65em;
   text-transform: uppercase;
   display: inline-block;
-  width: 100%;
   color: rgba(0, 0, 0, 0.6); }
 #webkite-results a.more-button, #webkite-results a.less-button {
   -webkit-box-sizing: border-box;
@@ -723,7 +724,6 @@
   line-height: 0.85em; }
 #webkite-results.xs .webkite-result-body .webkite-price-label {
   font-size: 0.65em;
-  text-transform: uppercase;
   display: inline; }
 #webkite-results.xs .webkite-branding-area {
   padding-bottom: 20px; }
@@ -765,7 +765,6 @@
   line-height: 0.85em; }
 #webkite-results.sm .webkite-result-body .webkite-price-label {
   font-size: 0.65em;
-  text-transform: uppercase;
   display: inline; }
 
 #webkite-results.md .webkite-image-wrapper {
@@ -777,6 +776,9 @@
   padding-left: 0; }
 #webkite-results.md .webkite-prices {
   margin-left: 0px; }
+#webkite-results.md .webkite-price-label {
+  width: 100%;
+  display: block; }
 
 /*************************** DISPLAY RULES */
 #webkite-results.xs .md-only {
